@@ -1,10 +1,10 @@
 # app.py
+import os
+os.environ["STREAMLIT_WATCHER_TYPE"] = "none"
 
 import streamlit as st
 from transformers import pipeline
 
-import os
-os.environ["STREAMLIT_WATCHER_TYPE"] = "none"
 # Configure Streamlit page
 st.set_page_config(page_title="Text-based Q&A", layout="centered")
 
